@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+     <div style="margin-top: 80px;">
+        <div class="card bg-light mb-3">
+        <div class="card-header">
+          <h5></h5>
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">
+                Вы успешно разлогинились.
+            </h5>
+            <p class="card-text">
+                Вы можете <a href='{% url "login" %}'>авторизоваться снова</a>
+            </p>
+          </div>
+      </div>
+    </div>
+
+{% endblock %}
